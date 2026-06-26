@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayPulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --pitch: #0E1410;
+        --pitch-2: #131C16;
+        --pitch-3: #1A251E;
+        --chalk: #F4F3EE;
+        --turf: #3FA34D;
+        --turf-dim: #2C7A39;
+        --amber: #E8A33D;
+        --blood: #C03B2B;
+        --text-secondary: #9BA89C;
+        --text-tertiary: #6B7870;
+        --surface-1: #131C16;
+        --surface-2: #1A251E;
+        --border-1: #25322A;
+        --border-2: #344038;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--pitch);
+        color: var(--chalk);
+      }
+      input:focus, select:focus, textarea:focus, button:focus-visible {
+        outline: 2px solid var(--turf);
+        outline-offset: 1px;
+      }
+      button { cursor: pointer; }
+      button:disabled { cursor: not-allowed; opacity: 0.5; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
